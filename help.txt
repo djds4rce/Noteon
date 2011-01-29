@@ -1,0 +1,10 @@
+List of arguments available for Noteon:
+
+-Add:usage noteon add <optional-note-name>
+Adds a new note to the noteon database.
+-List:usage noteon list
+Lists all the notes in the database.
+-View:usage noteon view <optional-note-name>
+Used to view a particular note.
+-Delete:usage noteon delete <optional-note-name>
+Deletes the note from the noteon database.
