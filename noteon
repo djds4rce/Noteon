@@ -27,7 +27,9 @@ def list_notes():
 	c.execute("select name,time from note")
 	row=c.fetchone()
 	if row!=None:
-		print("{0} created on {1}".format(row[0],row[1]))
+		c.execute('select name,time from note')
+		for row in c:
+			print("{0} created on {1}".format(row[0],row[1]))
 	else:
 		print("no notes to display")
 #This function can be called either with no arguments or one argument which is the name of the note to view.
